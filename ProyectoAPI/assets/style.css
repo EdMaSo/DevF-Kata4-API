@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #19193F;
+    padding: 20vh 25%;
+    height: 100vh;
+}
+
+.principal {
+    background-color: #19193F;
+    background-image: url("https://www.seekpng.com/png/full/4-44144_rick-and-morty-portal-png.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+}
+
+.container {
+
+}
+
+.carta {
+    background-color:rgba(120, 91, 159,0.9);
+    border-radius: 50px;
+    font: Arial;
+    color: white;
+}
