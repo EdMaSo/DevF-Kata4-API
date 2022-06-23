@@ -7,68 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
     <link rel="stylesheet" href="./assets/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
 
 <body class="principal">
     <main class="container">
-        <nav class="row justify-content-center">
-            <a class="col">Busca un personaje</a>
-            <input class="col form-control" list="datalistOptions" id="charactersInput" placeholder="Type to search...">
-            <datalist id="datalistOptions">
-                <!-- <option value="San Francisco">
-                <option value="New York">
-                <option value="Seattle">
-                <option value="Los Angeles">
-                <option value="Chicago"> -->
-              </datalist>
-            <button class="col-3 btn btn-danger"> Seleccionar </button> <!-- ¿Cómo hacer para que aparezca la info al seleccionar un personaje?-->
-            <!-- LISTA DESPLEGABLE-->
-        </nav>
+
         <article class="row carta justify-content-center" id="tarjeta">
             <div class="col">
-                <div class="row header"> 
-                    <h1 id="Nombre">Nombre personaje</h1>
+                <div class="row header">
+                    <h1 class="text-center" id="nombre"></h1>
                 </div>
-                <div class="row">    
-                    <div class="col img">
-                        <img src="https://rickandmortyapi.com/api/character/avatar/806.jpeg" alt="imagenEje">
+                <br>
+                <div class="row">
+                    <div class="col img nexty" id="cardPic">
+                        <img class="character" id="characterPhoto" src="" alt="imagenEje">
                     </div>
-
-                    <div class="col contact-info">
-                        <div class="row ID"> ID: </div>
-                        <div class="row genre"> Genre: </div>
-                        <div class="row species"> Species: </div>
-                        <div class="row origin"> Origin: </div>
-                        <div class="row episodes"> Episodes: </div>
+                    <div class="col contact-info nexty" id="cardInfo">
+                        <div class="row ID" id="idCharacter"></div>
+                        <div class="row genre" id="genre"></div>
+                        <div class="row species" id="spec"></div>
+                        <div class="row origin" id="ori"></div>
+                        <div class="row episodes" id="ep"></div>
+                        <br>
+                        <div class="row botones">
+                            <button type="button" class="btn btn-primary" id="next">Back</button>
+                            <button type="button" class="btn btn-primary" id="back">Next</button>
+                        </div>
                     </div>
                 </div>
+                <br>
             </div>
         </article>
 
     </main>
 
-<!-- 
-    <div class="dashboard">
-        <div class="contact-card">
-            <div class="list">
-                <div class="searching-bar">
-                    <input type="text" id="studentInput" name="studentInput" placeholder="Estudiante...">
-                </div>
-                <div class="list-container">
-                    <ul id="contacts-ul" class="contact-list">
-                    
-                            1. Previamente realizar el diseño para poder apoyarse en el
-                            cuando se este creando el JS de forma dinamica 
-                                            PARTE DINAMICA
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <script src="./assets/main.js"></script>
+    <script src="./assets/main2.js"></script>
 </body>
 
 </html>

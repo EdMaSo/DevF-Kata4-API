@@ -19,13 +19,35 @@ body {
     color: white;
 }
 
-.container {
-
-}
 
 .carta {
     background-color:rgba(120, 91, 159,0.9);
-    border-radius: 50px;
+    border-radius: 20px;
     font: Arial;
     color: white;
+}
+
+.character {
+    border-radius: 20px;
+    padding-left: 10px;
+    
+}
+/* 
+.nexty {
+    border-style: solid;
+    border-color: black 5px;
+    
+} */
+
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#next, #back {
+    width: fit-content;
+}
+
+.contact-info {
+    align-items: center;
 }
