@@ -25,12 +25,14 @@ body {
     border-radius: 20px;
     font: Arial;
     color: white;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Creepster', cursive;
 }
 
 .character {
     border-radius: 20px;
     padding-left: 10px;
-    
+    width: 70%;
 }
 /* 
 .nexty {
